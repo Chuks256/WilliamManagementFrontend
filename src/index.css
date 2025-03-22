@@ -1,0 +1,54 @@
+/* impport fonts  */
+@font-face {
+  font-family:"font_bold" ;
+  src: url("./fonts/BricolageGrotesque-Bold.ttf");
+}
+
+@font-face {
+  font-family:"font_regular" ;
+  src: url("./fonts/BricolageGrotesque-Regular.ttf");
+}
+
+@font-face {
+  font-family:"font_extra_bold" ;
+  src: url("./fonts/BricolageGrotesque-ExtraBold.ttf");
+}
+
+/* define root variables for styles  */
+:root{
+  --theme-primary-theme-color:#AEFFAB;
+  --theme-background:#E2FFE1;
+  --theme-sub-color:#031E02;
+  --input-element-color:#CCE2CC;
+}
+
+*{
+  transition:linear,1000ms;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "font_regular";
+  text-decoration: none;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+body{
+  background:var(--theme-background);
+}
+
+button{
+  border-style:solid;
+border-color:transparent;
+}
+
+a{
+  color:var(--theme-primary-theme-color);
+}
+
+a:hover{
+  font-weight:bold;
+}
+
+
+
+
