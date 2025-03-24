@@ -20,6 +20,10 @@ color:var(--theme-sub-color);
 
 @media(max-width:768px){
 font-size:25px;
+display:flex;
+text-align:center;
+width:350px;
+justify-content:center;
 }
 `;
 
@@ -47,8 +51,8 @@ border-radius:15px;
   background-size:cover;
   
 @media(max-width:768px){
-width:200px; 
-height:360px; 
+width:150px; 
+height:300px; 
 }
 `;
 
@@ -64,8 +68,8 @@ background-repeat:no-repeat;
 
 
 @media(max-width:768px){
-  width:200px;
-  height:160px;  
+  width:150px;
+  height:100px;  
   }
 
 `;
@@ -81,7 +85,7 @@ background-repeat:no-repeat;
 background-size:cover;
 
 @media(max-width:768px){
-  width:200px;
+  width:150px;
   height:190px;  
   }
 `;
