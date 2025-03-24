@@ -14,6 +14,12 @@ justify-content:space-between;
 const FormParentContainer = styled.div`
 margin-left:100px;
 margin-top:50px;
+
+@media(max-width:768px){
+    margin-left:90px;  
+    display:flex;
+    flex-direction:column;
+    }
 `;
 
 const FormOfficialLogo = styled.img`
@@ -50,6 +56,11 @@ background:grey;
 width:50vw;
 height:679px;
 background-image:url(${City});
+
+
+@media(max-width:768px){
+    display:none;
+    }
 `;
 
 const FormSubContainer = styled.div`
@@ -143,6 +154,7 @@ display:flex;
 flex-direction:column;
 gap:10px;
 text-align:center;
+display:none;
 `;
 
 const SigninBtn = styled.button`
@@ -165,6 +177,7 @@ transform:scale(90%);
 
 const AuthOpt = styled.b`
 color:var(--theme-sub-color);
+display:none;
 `;
 
 let Signinpage=()=>{

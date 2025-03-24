@@ -51,6 +51,11 @@ gap:1em;
 const HeaderMainTxt = styled.h1`
 color:var(--theme-primary-theme-color);
 font-size:53px;
+
+@media(max-width:768px){
+font-size:30px;
+width:400px;    
+}
 `;
 
 const HeaderSubTxt =styled.div`
@@ -58,11 +63,21 @@ font-size:20px;
 color:ivory;
 display:flex;
 width:350px;
+
+@media(max-width:768px){
+font-size:18px;
+width:300px;    
+}
 `;
 
 const CtaParentContainer =styled.div`
 display:flex;
 gap:3em;
+
+@media(max-width:768px){
+flex-direction:column;
+gap:2em;
+}
 `;
 
 const CtaSignupBtn = styled.button`
@@ -72,6 +87,10 @@ background:var(--theme-sub-color);
 color:var(--theme-primary-theme-color);
 font-weight:bold;
 cursor:pointer;
+
+@media(max-width:768px){
+width:300px;    
+}
 `;
 
 const CtaLearnMoreBtn = styled.button`
@@ -113,6 +132,12 @@ font-size: 50px;
 color:var(--theme-sub-color);
 width:650px;
 text-align:center;
+
+@media(max-width:768px){
+font-size:25px;
+width:400px;    
+}
+
 `;
 
 const InfoSubContainer = styled.div`
@@ -125,6 +150,11 @@ gap:6em;
 const InfoOneContainer = styled.div`
 display:flex;
 gap:4em;
+
+@media(max-width:768px){
+flex-direction:column;  
+align-items:center;  
+}
 `;
 
 const InfoTxtContainer = styled.div`
@@ -135,19 +165,57 @@ flex-direction:column;
 gap:1em;
 align-items:center;
 justify-content:center;
+
+@media(max-width:768px){
+justify-content:right;
+justify-item:center;
+margin-top:-50px;
+}
 `;
 
-const InfoTxtHeader=styled.h2``;
+const InfoSecondTxtContainer = styled.div`
+width:400px;
+text-align:left;
+display:flex;
+flex-direction:column;
+gap:1em;
+align-items:center;
+justify-content:center;
+
+@media(max-width:768px){
+justify-content:right;
+justify-item:center;
+
+}
+`;
+
+const InfoTxtHeader=styled.h2`
+@media(max-width:768px){
+text-align:center;    
+}
+`;
 
 const InfoTxtDetails = styled.p`
 font-size:15px;
 width:400px;
+
+@media(max-width:768px){
+text-align:center;    
+}
 `;
 
 const InfoTwoContainer = styled.div`
 display:flex;
 flex-direction:row-reverse;
 gap:6em;
+
+@media(max-width:768px){
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:1em;
+}
+
 `;
 
 const ImgOne = styled.div`
@@ -189,7 +257,7 @@ let Landingpage=()=>{
    
 
     let handleBtnClick=()=>{
-        defineNavigationObj("/Signup")
+        defineNavigationObj("/Signin")
     }
 
     return (
@@ -245,10 +313,10 @@ let Landingpage=()=>{
                 {/* info two container  */}
                 <InfoTwoContainer>
                 <ImgTwo></ImgTwo>
-                    <InfoTxtContainer style={{textAlign:'left'}}>
+                    <InfoSecondTxtContainer>
                         <InfoTxtHeader>Become part of a secured and connected community</InfoTxtHeader>
                         <InfoTxtDetails>lormen ipsum iptsum lorm iptum lormen ipsum iptsum lorm iptum sremlormen ipsum iptsum lorm i</InfoTxtDetails>
-                    </InfoTxtContainer>
+                    </InfoSecondTxtContainer>
                 </InfoTwoContainer>
               </InfoSubContainer>
             </InfoParentContainer>

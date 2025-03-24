@@ -17,14 +17,21 @@ justify-content:center;
 const PhotoExerptHeader = styled.h2`
 font-size:40px;
 color:var(--theme-sub-color);
+
+@media(max-width:768px){
+font-size:25px;
+}
 `;
+
+
 const PhotoLayoutContainer = styled.div`
 display: grid;
-  grid-template-columns: 1fr 1fr; /* Big image takes twice the space */
-  grid-template-rows: auto; /* Only one row needed, but can be adjusted */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto; 
   gap: 10px;
-  max-width: 800px; /* Optional: Limit grid width */
-  margin: 0 auto; /* Optional: Center grid */
+  max-width: 800px; 
+  margin: 0 auto; 
+
 `;
 
 const PhotoOne=styled.div`
@@ -38,6 +45,11 @@ border-radius:15px;
   grid-row: 1 / 3;
   background-repeat:no-repeat;
   background-size:cover;
+  
+@media(max-width:768px){
+width:200px; 
+height:360px; 
+}
 `;
 
 const PhotoTwo=styled.div`
@@ -49,6 +61,13 @@ height:192px;
 border-radius:15px;
 background-size:cover;
 background-repeat:no-repeat;
+
+
+@media(max-width:768px){
+  width:200px;
+  height:160px;  
+  }
+
 `;
 
 const PhotoThree=styled.div`
@@ -60,6 +79,11 @@ height:250px;
 border-radius:15px;
 background-repeat:no-repeat;
 background-size:cover;
+
+@media(max-width:768px){
+  width:200px;
+  height:190px;  
+  }
 `;
 
 

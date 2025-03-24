@@ -24,6 +24,11 @@ padding:15px;
 background:var(--theme-sub-color);
 border-radius:100px;
 width:40vw;
+
+@media(max-width:768px){
+padding:13px;
+width:80vw;
+}
 `;
 
 const NavLogoTxt=styled.h3`
@@ -44,6 +49,12 @@ gap:2em;
 margin-left:16px;
 justify-content:center;
 color:var(--theme-primary-theme-color);
+
+@media(max-width:768px){
+display:none;
+}
+
+
 `;
 
 const NavbarItems = styled.li`

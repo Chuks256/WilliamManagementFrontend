@@ -14,6 +14,12 @@ background:var(--theme-sub-color);
 const FooterContentContainer = styled.div`
 margin-top:50px;
 margin-left:10em;
+
+
+@media(max-width:768px){
+    margin-left:3em;  
+    margin-top:100px;
+    }
 `;
 
 const FooterLogoContainer = styled.div`
@@ -40,6 +46,12 @@ gap:1em;
 const FooterLogoDetails = styled.p`
 color:var(--theme-primary-theme-color);
 font-size:14px;
+
+
+@media(max-width:768px){
+    font-size:13px;
+    width:250px;  
+    }
 `;
 
 
