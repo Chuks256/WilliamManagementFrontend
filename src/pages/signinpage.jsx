@@ -9,6 +9,11 @@ import ModalComponent from "../components/modal.component";
 const ParentContainer = styled.div`
 display:flex;
 justify-content:space-between;
+
+@media(max-width:768px){
+justify-content:center;
+}
+
 `;
 
 const FormParentContainer = styled.div`
@@ -16,10 +21,8 @@ margin-left:100px;
 margin-top:50px;
 
 @media(max-width:768px){
-    margin-left:90px;  
-    display:flex;
-    flex-direction:column;
-    }
+margin-left:0px; 
+}
 `;
 
 const FormOfficialLogo = styled.img`
@@ -123,6 +126,10 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 gap:1em;
+
+@media(max-width:768px){
+gap:2em;    
+}
 `;
 
 
@@ -154,7 +161,7 @@ display:flex;
 flex-direction:column;
 gap:10px;
 text-align:center;
-display:none;
+
 `;
 
 const SigninBtn = styled.button`
@@ -275,7 +282,7 @@ let Signinpage=()=>{
 
     // handle signup button navigation 
     let HandleSignupNavigation =()=>{
-        NavigationObj("/Signup")
+        NavigationObj("/")
     }
 
     return(
@@ -307,8 +314,7 @@ let Signinpage=()=>{
                         <SigninBtn onClick={HandleSigninAction}>{btnState}</SigninBtn>
                         <AuthOpt>Or</AuthOpt>
                         <SignupBtnOptionContainer>
-                            <AuthInfo>I dont have an account ?</AuthInfo>
-                            <SignupBtn onClick={HandleSignupNavigation}>Sign up ⚡</SignupBtn>
+                            <SignupBtn onClick={HandleSignupNavigation}>Back ⚡</SignupBtn>
                         </SignupBtnOptionContainer>
                     </AuthenticationParentContainer>
                 </FormSubContainer>
