@@ -17,8 +17,8 @@ margin-left:10em;
 
 
 @media(max-width:768px){
-    margin-left:3em;  
-    margin-top:100px;
+    margin-left:2em;  
+    margin-top:50px;
     }
 `;
 
