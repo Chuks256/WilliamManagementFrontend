@@ -146,6 +146,12 @@ display:flex;
 flex-direction:column;
 margin-top:80px;
 gap:6em;
+
+
+@media(max-width:768px){
+gap:4em;    
+}
+
 `;
 
 const InfoOneContainer = styled.div`
@@ -191,6 +197,8 @@ justify-item:center;
 
 const InfoTxtHeader=styled.h2`
 @media(max-width:768px){
+font-size:21px;
+width:350px;
 text-align:center;    
 }
 `;
@@ -200,7 +208,9 @@ font-size:15px;
 width:400px;
 
 @media(max-width:768px){
-text-align:center;    
+text-align:center;
+width:290px;
+font-size:15px;    
 }
 `;
 
